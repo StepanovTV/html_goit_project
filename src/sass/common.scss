@@ -1,0 +1,54 @@
+$col_dark: #282528;
+$col_grean: #1ab798;
+$col_white: #FFF;
+
+$fontS: 'Open Sans', sans-serif;
+$fontR: 'Raleway', sans-serif;
+
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+  transition: all 200ms linear;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
