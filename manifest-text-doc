@@ -1,0 +1,96 @@
+header
+    header__navigetion
+    header__title
+    header__discription
+    header__list
+    header__button
+    header__image1
+    header__image2
+
+navigation
+    navigation__logo
+    navigation__logo-image
+    navigetoin__burger
+    navigetion__list
+    navigation__item
+    navigation__link
+    
+sectoin-title 
+    ::before
+    ::after
+
+
+features
+    features__section-title
+    features__text
+
+key-feachers
+    key-faechers__list
+    key-faechers__item
+        ::before
+    key-faechers__item-name
+    key-faechers__item-text
+    key-faechers__image
+
+
+video
+    video__title
+    video__text
+    video__mobile-platform
+    video__mobile-button 
+    video__frame
+
+team
+    team__section-title 
+    team__text
+
+team-list
+    team-list__item
+    team-list__wrap
+        team-list__image
+        team-list__owerlay
+            team-list__name
+            team-list__about-text
+            team-list__socisl-list
+            team-list__items
+                team-list__svg
+    team-list__title
+    team-list__text
+
+customers
+    customers__section-title
+    customers__slider
+    customers__member
+    customers__item
+    customers__img
+    customers__name
+    customers__pocition
+    customers__feedback
+    customers__slider-navigation 
+        customers__sliders-item
+        customers__sliders-item_active
+
+footer
+    footer__section-title
+    footer__section-title_white
+    footer__contacts
+    footer__left
+    footer__right
+    footer__title
+    footer__text
+    footer__socials
+        footer__socials-item 
+        footer__socials-svg 
+    footer__phone
+    footer__email
+    footer__form
+        footer__input
+        footer__text-area
+        footer__button
+    footer__copyrights
+
+
+
+
+
+        
