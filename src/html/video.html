@@ -1,1 +1,41 @@
-<h2>Video Ok</h2>
+<section class="video">
+  <div class="container">
+    <div class="video__flex">
+      <div class="video__left">
+        <h2 class="video__title">watch the video</h2>
+        <p class="video__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          fringilla fringilla nisl congue congue. Maecenas nec condimentum
+          libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies
+          nisl at, hendrerit risusuis ornare luctus id sollicitudin ante
+          lobortis at.
+        </p>
+        <ul class="video__mobile-platform">
+          <li class="video__mobile-item">
+            <a href="#" class="video__mobile-button ">
+              <svg class="video__button-svg">
+                <use xlink:href="./images/icon-apple.svg#apple"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="video__mobile-item">
+            <a href="#" class="video__mobile-button ">
+              <svg class="video__button-svg">
+                <use xlink:href="./images/icon-android.svg#android"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="video__right">
+        <div class="video__frame">
+          <video controls poster="./images/video_cover.jpg" preload="none">
+            <source src="#" type="video/mp4" />
+            <source src="#" type="video/webm" />
+            <source src="#" type="video/ogg" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

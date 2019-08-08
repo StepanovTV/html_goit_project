@@ -4,8 +4,16 @@ $col_white: #FFF;
 
 $fontS: 'Open Sans', sans-serif;
 $fontR: 'Raleway', sans-serif;
-
-
+//@extend %list;
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 *,
 *:before,
 *::after {
@@ -49,6 +57,14 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
+  width: 292px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1118px;
+  }
 }
