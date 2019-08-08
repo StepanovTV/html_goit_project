@@ -28,17 +28,15 @@ html {
   padding: 0;
   font-family: serif;
 }
-
 img {
   display: block;
   margin: 0;
   padding: 0;
+  max-width:100%;
 }
-
 button {
   cursor: pointer;
 }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -54,15 +52,22 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
 .container {
   width: 292px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 708px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1118px;
+  }
+}
+.sectoin-title {
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
@@ -119,4 +124,3 @@ input[type="radio"].visually-hidden {
     }
   }
 }
-
