@@ -1,3 +1,24 @@
+<div class="div-video-ower">
+<div id="heder_video" class="heder_video">
+    <video
+      width="100%"
+      height="auto"
+      poster="./images/heder_bg.jpg"
+      preload="auto"
+      muted
+      autoplay
+      loop
+    >
+      <source
+        src="./images/89a679ffd6411983f40b7d261b66d9ad.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="./images/89a679ffd6411983f40b7d261b66d9ad.webm"
+        type="video/webm"
+      />
+    </video>
+  </div>
 <header class="header">
   <div class="header__navigetion">
     <div class="container">
@@ -7,13 +28,13 @@
             <use xlink:href="./images/logo-mobileapp.svg#logo"></use>
           </svg>
         </a>
-        <button class="navigation__burger">
+        <button class="navigation__burger" id="burger">
           <span class="visually-hidden">menu</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul class="navigation__list">
+        <ul id="menu" class="navigation__list">
           <li class="navigation__item">
             <a href="" class="navigation__link">home</a>
           </li>
@@ -68,3 +89,4 @@
     />
   </div>
 </header>
+</div>
