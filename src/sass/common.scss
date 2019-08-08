@@ -75,18 +75,6 @@ input[type="radio"].visually-hidden {
 
 .sectoin-title {
   margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    width: 708px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1118px;
-  }
-}
-
-.sectoin-title {
-  margin: 0 auto;
   position: relative;
   font-size: 18px;
   font-family: $fontR;
