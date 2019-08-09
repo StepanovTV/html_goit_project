@@ -750,7 +750,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: -50px;
   top: -20px;
-  background-image: url("./images/doublequotes.png");
+  background-image: url("../images/doublequotes.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -783,7 +783,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-  background-image: url("/images/bg_footer.png");
+  background-image: url("../images/bg_footer.png");
+  background-color: #333;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
