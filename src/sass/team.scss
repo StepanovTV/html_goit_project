@@ -125,6 +125,16 @@
   padding-top: 8px;
 }
 
+.team-list-soc-linc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.team-list-soc-linc:hover{
+  background-color: darken($col_grean, 15%);
+}
 
 // MEDIA 767
 @media (max-width: 767px) {
