@@ -127,7 +127,12 @@
 .team-list__items:not(:last-child) {
   margin-right: 4px;
 }
-
+.team-list__items:hover {
+  background-color: red;
+}
+.team-list__links:hover {
+background-color: red;
+}
 .team-list__svg {
   fill: $col_white;
   width: 24px;
