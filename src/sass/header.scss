@@ -1,0 +1,318 @@
+.header {
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 105px;
+  //background-image: url('../images/heder_bg.jpg');
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // position: relative;
+
+  &__navigetion {
+    background-color: $col_white;
+    padding: 0 15px;
+    margin-bottom: 86px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 166px;
+    }
+
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    font-family: "Raleway";
+    color: $col_white;
+    font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__discription {
+    margin: 0 0 30px 0;
+    padding: 0;
+    max-width: 200px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $col_white;
+    font-family: $fontS;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+      font-size: 22px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+  }
+
+  &__list-item {
+    padding-left: 26px;
+    background-image: url('../images/heder_arrow.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    font-size: 12px;
+    color: $col_white;
+    font-family: $fontS;
+    font-weight: 600;
+    line-height: 12px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 34px 0 0 24px;
+    height: 48px;
+    width: 210px;
+    border: none;
+    border-radius: 4px;
+    background-color: $col_grean;
+    font-size: 20px;
+    color: $col_white;
+    font-family: $fontS;
+    font-weight: 400;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: darken($col_grean, 5%);
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 82px;
+    }
+  }
+
+  &__button-svg {
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 14px;
+    fill: $col_white;
+
+  }
+
+
+  &__image1 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 232px;
+      height: auto;
+      position: absolute;
+      bottom: -92px;
+      left: 50%;
+      transform: translateX(54px);
+      z-index: 5;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 346px;
+      bottom: -120px;
+      transform: translateX(84px);
+    }
+  }
+
+  &__image2 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 256px;
+      height: auto;
+      position: absolute;
+      bottom: -92px;
+      left: 50%;
+      transform: translateX(100px);
+      z-index: 4;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 382px;
+      bottom: -120px;
+      transform: translateX(150px);
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+  }
+
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  &__logo {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    z-index: 88;
+  }
+
+  &__logo-image {
+    width: 110px;
+    height: 22px;
+    fill: $col_grean;
+
+    @media screen and (min-width: 768px) {
+      width: 150px;
+      height: 30px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    display: none; // flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.22);
+    background-color: rgb(255, 255, 255);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      position: static;
+      flex-direction: row;
+      left: auto;
+      top: auto;
+      height: auto;
+      width: 450px;
+      box-shadow: none;
+    }
+
+
+  }
+
+  &__item {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__link {
+    font-family: $fontS;
+    color: rgba($col_dark, 0.6);
+    text-transform: uppercase;
+    line-height: 3;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $col_dark;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    border: none;
+    background: transparent;
+    z-index: 88;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      background-color: $col_dark;
+      width: 30px;
+      height: 3px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover span,
+    &:focus span {
+      outline: none;
+      background-color: $col_grean;
+    }
+  }
+}
+
+.heder_video {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  height: 100%;
+  min-height: 570px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 760px;
+  }
+}
+
+.heder_video video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+
+  min-height: 570px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 760px;
+  }
+}
+
+.div-video-ower {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  max-height: 100%;
+  background-color: rgba(29, 2, 38, 0.50);
+  background-image: url(../images/bg-over.png);
+  background-position: center center;
+  background-repeat: repeat;
+  z-index: 3;
+
+  min-height: 570px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 760px;
+  }
+}

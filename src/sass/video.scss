@@ -1,0 +1,135 @@
+.video {
+  background: #31d4e7;
+  padding-top: 58px;
+  padding-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  &__flex {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-family: $fontR;
+    color: $col_dark;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    margin-bottom: 22px;
+    font-size: 16px;
+    font-family: $fontS;
+    color: $col_white;
+    line-height: 1.625;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  &__mobile-platform {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__mobile-item:first-child {
+    margin-right: 18px;
+  }
+
+  &__mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #0098cd;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#0098cd, 5%);
+    }
+
+    &:hover .video__button-svg,
+    &:focus .video__button-svg {
+      fill: darken(#fff, 15%);
+    }
+  }
+
+  &__button-svg {
+    width: 32px;
+    height: 32px;
+    fill: $col_white;
+  }
+
+  &__left {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__frame {
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    video {
+      max-width: 100%;
+      height: 216px;
+
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        height: 330px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        height: 307px;
+      }
+
+    }
+  }
+
+}

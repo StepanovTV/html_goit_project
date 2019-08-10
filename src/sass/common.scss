@@ -1,20 +1,22 @@
 $col_dark: #282528;
 $col_grean: #1ab798;
 $col_white: #FFF;
-$fontS: 'Open Sans',
-sans-serif;
-$fontR: 'Raleway',
-sans-serif;
+
+$fontS: 'Open Sans', sans-serif;
+$fontR: 'Raleway', sans-serif;
+
 //@extend %list;
 %list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *::after {
@@ -24,14 +26,18 @@ html {
   padding: 0;
   font-family: serif;
 }
+
 img {
   display: block;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
+
 button {
   cursor: pointer;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -47,21 +53,26 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+
 .container {
   width: 292px;
   margin: 0 auto;
+
   @media screen and (min-width: 768px) {
     width: 708px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1118px;
   }
 }
+
 .sectoin-title {
   margin: 0 auto;
   position: relative;
@@ -72,9 +83,11 @@ input[type="radio"].visually-hidden {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+
   @media screen and (min-width: 768px) {
     font-size: 28px;
   }
+
   &::before {
     content: '';
     display: block;
@@ -84,10 +97,12 @@ input[type="radio"].visually-hidden {
     width: 60px;
     height: 1px;
     background-color: #babdc1;
+
     @media screen and (min-width: 768px) {
       top: 20px;
     }
   }
+
   &::after {
     content: '';
     display: block;
@@ -97,6 +112,7 @@ input[type="radio"].visually-hidden {
     width: 60px;
     height: 1px;
     background-color: #babdc1;
+
     @media screen and (min-width: 768px) {
       top: 20px;
     }

@@ -1,0 +1,158 @@
+.customers {
+    padding: 50px 0;
+}
+
+.customers__section-title {
+    width: 155px;
+    padding-bottom: 50px;
+}
+
+.customers__member {
+    @extend %list;
+    min-width: 290px;
+    min-height: 380px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.customers__item {
+    display: none;
+}
+
+.customers__item_active {
+    display: block;
+    margin: 0 auto;
+}
+
+.customers__img {
+    width: 96px;
+    height: 96px;
+    object-fit: none;
+    object-position: 50% 0%;
+    border: 2px solid #c4c7c7;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.customers__name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #062033;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.customers__position {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #646464;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customers__feedback {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #282528;
+    text-transform: none;
+    text-align: center;
+    line-height: 26px;
+    position: relative;
+
+}
+
+.customers__comment {
+    display: block;
+    width: 230px;
+    height: 210px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: $fontS;
+    color: rgb(40, 37, 40);
+    line-height: 2;
+}
+
+.Vestibulum_placerat_nisl_quis_justo_venenatis__ {
+  
+  text-align: center;
+  position: absolute;
+  left: 150.679px;
+  top: 3579.575px;
+  width: 936px;
+  height: 127px;
+  z-index: 158;
+}
+
+
+.customers__feedback::before {
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: -20px;
+    background-image: url("../images/doublequotes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    min-width: 50px;
+    min-height: 40px;
+ }
+
+.customers__slider-navigation {
+    display: flex;
+    justify-content: center;
+    list-style-position: inside;
+}
+
+.customers__sliders-item {
+    color: #d4d3d4;
+    font-size: 36px;
+    width: 30px;
+    padding-left: 10px;
+}
+
+.customers__sliders-item_active,
+.customers__sliders-item:hover,
+.customers__sliders-item:focus {
+    color: #1ab798;
+}
+
+.customers__slider {
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .customers__section-title {
+        width: 460px;
+        padding-bottom: 65px;
+    }
+
+    .customers__comment {
+        width: 580px;
+        height: 100%;
+    }
+
+    .customers__position {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers__comment {
+        width: 950px;
+    }
+
+    .customers__position {
+        margin-bottom: 110px;
+    }
+
+    .customers__slider {
+        margin-bottom: 120px;
+    }
+}
